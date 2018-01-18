@@ -1,0 +1,11 @@
+main: BST.o 
+	c++ -o main main.cc BST.o 
+
+#ListTest: List.o
+#	#c++ -o ListTest ListTest.cc List.o
+
+BST.o: BST.h
+	c++ -c BST.cc
+
+clean:
+	/bin/rm -f *.o writer
